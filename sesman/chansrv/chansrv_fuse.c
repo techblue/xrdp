@@ -470,6 +470,7 @@ xfuse_init(void)
 
     fuse_opt_add_arg(&args, "xrdp-chansrv");
     fuse_opt_add_arg(&args, g_fuse_root_path);
+    fuse_opt_add_arg(&args, "-oallow_other");
     //fuse_opt_add_arg(&args, "-s"); /* single threaded mode */
     //fuse_opt_add_arg(&args, "-d"); /* debug mode           */
 
